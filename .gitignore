@@ -90,6 +90,5 @@ ENV/
 # Rope project settings
 .ropeproject
 
-
 # Jetbrains stuff
-.idea/
+.idea/*
