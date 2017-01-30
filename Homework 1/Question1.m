@@ -30,3 +30,5 @@ end
 
 % print the amounts of each grade
 fprintf('F: %d D: %d C: %d B: %d A: %d\n', histcounts(sortedMatrix(:,5), 5));
+
+end
