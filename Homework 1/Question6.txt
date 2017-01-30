@@ -1,0 +1,3 @@
+6. The student happier with method #4 is justified due to the results being compared to the standard deviation. Being compared against their classmates directly justifies their better grade since all of the bins can contain the same number of elements. 
+
+The student happier with method #2 is not justified, since the method creates bins just from counting up from the worst score to the best. It has nothing to do comparatively to the other students in the course.
