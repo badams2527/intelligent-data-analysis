@@ -14,11 +14,11 @@ scoreSum = horzcat(matrix, sum(matrix(:,2:4),2));
 sortedMatrix = sortrows(scoreSum);
 
 % /// Get the Equal Width Binning ///
-% get the counts and edges of the dataset
-[N, edges] = histcounts(sortedMatrix(:,5), 'Normalization', 'probability');
+% equalWidth = (max-min) / N
+binSize = (max(scoreSum(:,5)) - min(scoreSum(:,5))) / 5;
 
 % evaluate a letter grade for each score by binSize from min to max
-equalWidth = discretize(sortedMatrix(:,5), edges, 'categorical', {'F' 'D' 'C' 'B' 'A'});
+equalWidth = discretize(sortedMatrix(:,5), min(scoreSum(:,5)):binSize:max(scoreSum(:,5)), 'categorical', {'F' 'D' 'C' 'B' 'A'});
 
 
 % /// Get the Equal Frequency Binning ///

@@ -34,7 +34,7 @@ end
 fprintf('F: %d D: %d C: %d B: %d A: %d\n', histcounts(finalMatrix(:,6), 5));
 
 % print student id's who would be happier with equal width binning
-fprintf('Students happier with Equal Width: 3, 5, 7, 11, 12, 13, 15, 16, 17, 21, 22, 23, 28, 30, 32, 34, 36, 38, 40\n');
+fprintf('Students happier with Equal Width: 5, 7, 11, 12, 15, 16, 17, 21, 22, 28, 34, 36, 38\n');
 
 % print student id's who would be happier with equal freq binning
 fprintf('Students happier with Equal Frequency: 24, 37\n');
