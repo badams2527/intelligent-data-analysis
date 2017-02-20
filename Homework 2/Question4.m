@@ -9,3 +9,5 @@ training = d1(trainingSeedIdx, :);
 validation = d1(validationSeedIdx, :);
 testing = d1(testingSeedIdx, :);
 
+% write test values to a csv so it can be read easier
+csvwrite('question4.csv', testingSeedIdx);
